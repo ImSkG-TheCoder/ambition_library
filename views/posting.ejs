@@ -1,0 +1,43 @@
+<%- include("partial/header") %>
+<h1>Ambition Library</h1>
+<h1>Please feel all the information here</h1>
+<form action="/bookMySeat" method="post">
+    <label for="firstName"><strong>First Name :</strong></label>
+    <input class="form-control" type="text" name ="firstName" placeholder="First Name">
+    <label for="lastName"><strong></strong>Last Name :</strong></label>
+    <input class="form-control" type="text" name="lastName"placeholder="Last Name">
+    <label for="email"><strong>Email :</strong></label>
+    <input class="form-control" type="email" name="email" placeholder="Email">
+    <label for="phoneNumber"><strong>Phone Number :</strong></label>
+    <input class="form-control" type="text" name="phoneNumber" placeholder="Phone number">
+    <label for="address"><strong>Address :</strong></label>
+    <input class="form-control" type="text" name="address" placeholder="Address eg. village name and District name">
+    <label for="adharNumber"><strong>AAdhar Number :</strong></label>
+    <input class="form-control" type="text" name="adharNumber" placeholder="aadhar number">
+     
+    <label for="slot"><strong>Choose Your slot</strong></label>
+    <select name="slot" id="shift" class="form-select" aria-label="Default select example">
+        <option selected value="1">Open this select menu</option>
+        <option value="6 am to 12 am" >6 am to 12 am</option>
+        <option value="12 pm to 6 pm" >12 pm to 6 pm</option>
+        <option value="24 hours shift" >24 hours shift</option>
+        <option value="Only Night shift" >Only Night shift</option>
+    </select>
+    <button type="submit" class="btn btn-primary" name="finalSubmission">Submit</button>
+</form>
+
+<%- include("partial/footer") %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partial/footer") %>

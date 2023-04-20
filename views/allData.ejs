@@ -1,0 +1,25 @@
+<%- include("partial/header") %>
+<h3 class="data" style="text-align: center;">All Enquiried Data.</h3>
+<table class="table table-striped">
+  <tr>
+    <th scope="col">_id</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">Email_id</th>
+    <th scope="col">Phone Number</th>
+    <th scope="col">shift</th>
+    <th scope="col">aadhar</th>
+  </tr>
+  <% data.forEach(function(value,index){ %> 
+  <tr>
+    <td><%=value._id%></td>
+    <td><%=value.firstName%></td>
+    <td><%=value.lastName%></td>
+    <td><%=value.Email%></td>
+    <td><%=value.phoneNumber%></td>
+    <td><%=value.shift%></td>
+    <td><%=value.aadharNumber%></td>
+  </tr>
+  <% }); %>
+</table>
+<%- include("partial/footer") %>

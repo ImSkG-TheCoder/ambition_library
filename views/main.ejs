@@ -1,0 +1,56 @@
+<%- include("partial/header") %>
+
+<div id="top">
+
+    <div class="container-fluid  bg-dark">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand item" href="">Ambition</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav  ms-auto">
+                    <li class="navj-item"><a class="nav-link item" href="contact.html" alt="contact">Contact</a></li>
+                    <li class="navj-item"><a class="nav-link item" href="About.html" alt="About">About Us</a></li>
+                    <li class="navj-item"><a class="nav-link item" href="" alt="location">Location on map</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <h1 class="headings">Welcome to Ambiton Library</h1>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active divSizing" data-bs-interval="5000">
+                <img src="images/image2.jpg" class="d-block w-100 sizing" alt="not available">
+            </div>
+            <div class="carousel-item divSizing" data-bs-interval="2000">
+                <img src="images/image1.jpg" class="d-block w-100 sizing" alt="not available">
+            </div>
+            <div class="carousel-item divSizing" data-bs-interval="2000">
+                <img src="images/image3.jpg" class="d-block w-100 sizing" alt="not available">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <img src="images/200.webp" alt="gif picture" class="center">
+    <br>
+    <h3 class="imp">Hurry! Book Your Seat Now. Limited seats are available.</h3>
+    <br>
+    <form action="/seat" method="post">
+    <div class="imgcontain">
+    <button type="submit" class="btn btn-primary" name ="button" value="seat">Book Seat</button>
+    </div>
+    </form>
+    <%- include("partial/footer") %>
